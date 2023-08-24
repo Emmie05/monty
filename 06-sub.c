@@ -1,6 +1,10 @@
 #include "monty.h"
 
-/* sub opcode implementation */
+/**
+ * sub - Subtracts the top element from the second top element of the stack.
+ * @stack: Pointer to the top of the stack
+ * @line_number: Line number of the instruction
+ */
 void sub(stack_t **stack, unsigned int line_number)
 {
     if (*stack && (*stack)->next)

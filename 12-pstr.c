@@ -1,7 +1,11 @@
 #include "monty.h"
 #include <stdio.h>
 
-/* pstr opcode implementation */
+/**
+ * pstr - Prints the string starting from the top of the stack.
+ * @stack: Pointer to the top of the stack
+ * @line_number: Line number of the instruction
+ */
 void pstr(stack_t **stack, unsigned int line_number)
 {
     (void)line_number; /* Prevent unused parameter warning */

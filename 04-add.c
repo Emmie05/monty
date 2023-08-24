@@ -1,6 +1,10 @@
 #include "monty.h"
 
-/* add opcode implementation */
+/**
+ * add - Adds the top two elements of the stack.
+ * @stack: Pointer to the top of the stack
+ * @line_number: Line number of the instruction
+ */
 void add(stack_t **stack, unsigned int line_number)
 {
     if (*stack && (*stack)->next)

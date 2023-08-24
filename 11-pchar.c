@@ -1,7 +1,11 @@
 #include "monty.h"
 #include <stdio.h>
 
-/* pchar opcode implementation */
+/**
+ * pchar - Prints the character at the top of the stack.
+ * @stack: Pointer to the top of the stack
+ * @line_number: Line number of the instruction
+ */
 void pchar(stack_t **stack, unsigned int line_number)
 {
     if (*stack)

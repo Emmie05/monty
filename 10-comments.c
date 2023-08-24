@@ -1,13 +1,22 @@
 #include "monty.h"
 #include <string.h>
 
-/* is_comment function to check if a line is a comment */
+/**
+ * is_comment - Checks if a line is a comment.
+ * @str: The input line to check
+ *
+ * Return: 1 if the line is a comment, 0 otherwise
+ */
 int is_comment(const char *line)
 {
     return (line[0] == '#');
 }
 
-/* Process a line of input */
+/**
+ * process_line - Processes a line of Monty bytecode.
+ * @line: The input line to process
+ * @line_number: The line number of the instruction
+ */
 void process_line(stack_t **stack, char *line, unsigned int line_number)
 {
     /* Remove newline characters from the line */
@@ -45,7 +54,10 @@ void process_line(stack_t **stack, char *line, unsigned int line_number)
     }
 }
 
-/* Main interpreter loop */
+/**
+ * interpreter_loop - Main interpreter loop.
+ * @script: The script file to read instructions from
+ */
 void interpreter_loop(FILE *file)
 {
     char *line = NULL;
